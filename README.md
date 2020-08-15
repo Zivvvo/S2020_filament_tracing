@@ -1,4 +1,4 @@
-RANSACFit
+<b>RANSACFit</b>
 
 RANSAC fit, also known as Random Sample Consensus, is an iterative method to estimate parameters of a mathematical model from a set of observed data that contains outliers, when e outliers are accorded no influence on the values of the estimates. (https://en.wikipedia.org/wiki/Random_sample_consensus#:~:text=Random%20sample%20consensus%20(RANSAC)%20is,the%20values%20of%20the%20estimates.)
 
