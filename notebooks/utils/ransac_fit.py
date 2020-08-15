@@ -71,21 +71,21 @@ def polyfit(data, order, maxdistance, disable_linear=True, directory_mode=True):
             alternative_model = ransac
             print("Linear model chosen")
 
-            plot_line(line_x, line_y_linear, 'LinearRegressor', lw, color="cornflowerblue")
+            #plot_line(line_x, line_y_linear, 'LinearRegressor', lw, color="cornflowerblue")
 
         else:
             chosen_model = ransac
             alternative_model = linear
             print("Polynomial model chosen")
 
-            plot_line(line_x, line_y_ransac, 'RANSACRegressor', lw, color="cornflowerblue")
+            #plot_line(line_x, line_y_ransac, 'RANSACRegressor', lw, color="cornflowerblue")
 
     else:
         chosen_model = ransac
         alternative_model = linear
         print("Polynomial model chosen")
 
-        plot_line(line_x, line_y_ransac, 'RANSACRegressor', lw, color="cornflowerblue")
+        #plot_line(line_x, line_y_ransac, 'RANSACRegressor', lw, color="cornflowerblue")
 
     # information to be returned x_coords, y_coords(linear prediction), y_coords(polynomial prediction), chosen sklearn model, unchosen sklearn model
     cache = {"x": line_x, "yl": line_y_linear, "yr": line_y_ransac, "model": chosen_model,
